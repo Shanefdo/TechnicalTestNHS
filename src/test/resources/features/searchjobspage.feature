@@ -4,8 +4,8 @@ Feature: Search Functionality for NHS Jobs website
   I want to search for a job with my preferences
   So that I can get recently posted job results
 
-  Background:
-    Given I am on the NHS jobs website search page
+#  Background:
+#    Given I am on the NHS jobs website search page
 
     Scenario: Successful search jobs with default input values on what and where fields
       Given I am a jobseeker on NHS Jobs website
