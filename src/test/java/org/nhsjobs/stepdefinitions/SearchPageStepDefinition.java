@@ -8,6 +8,7 @@ import io.cucumber.java.en.When;
 import org.nhsjobs.pages.SearchPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 
 public class SearchPageStepDefinition {
@@ -17,7 +18,11 @@ public class SearchPageStepDefinition {
 
     @Before
     public void setup() {
-        driver = new ChromeDriver();
+        //driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.setBinary("src/test/resources/drivers/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing");
+
+        ChromeDriver driver = new ChromeDriver(options);
     }
 
     @After
